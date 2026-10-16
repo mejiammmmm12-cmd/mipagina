@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="navegador">
+        <div class="puntos">
+            <span class="punto rojo"></span>
+            <span class="punto amarillo"></span>
+            <span class="punto verde"></span>
+        </div>
+        <div class="direccion">
+            https://tu-usuario.github.io/mi-pagina-web/
+        </div>
+    </div>
+
+    <header id="inicio">
+        <h1>Mi página web</h1>
+
+        <nav>
+            <a href="#texto">Texto</a>
+            <a href="#listas">Listas</a>
+            <a href="#tabla">Tabla</a>
+            <a href="#multimedia">Multimedia</a>
+            <a href="#formulario">Formulario</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <button id="cambiarTema" type="button">
+            Cambiar tema
+        </button>
+    </header>
+
+    <div class="contenedor">
+
+        <main>
+
+            <section id="texto" class="seccion">
+                <h2>Elementos de texto</h2>
+                <p>
+                    Párrafo con <strong>negrita</strong>,
+                    <em>cursiva</em> y
+                    <mark>texto resaltado</mark>.
+                    Cita destacada.
+                    <a href="https://www.google.com"
+                       target="_blank" rel="noopener">
+                        Enlace externo
+                    </a>.
+                </p>
+
+                <blockquote>
+                    Aprender programación es crear nuevas posibilidades.
+                </blockquote>
+
+                <hr>
+                <p>Este es otro párrafo de ejemplo.</p>
+            </section>
+
+            <section id="listas" class="seccion">
+                <h2>Listas</h2>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <ol>
+                    <li>Crear</li>
+                    <li>Escribir</li>
+                    <li>Publicar</li>
+                </ol>
+
+                <dl>
+                    <dt><strong>HTML</strong></dt>
+                    <dd>Organiza el contenido de una página.</dd>
+                </dl>
+            </section>
+
+            <section id="tabla" class="seccion">
+                <h2>Tabla</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Función</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Estructura</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Diseño</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Interactividad</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="multimedia" class="seccion">
+                <h2>Multimedia</h2>
+
+                <div class="multimedia">
+                    <figure>
+                        <img
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80"
+                            alt="Computadora y espacio de trabajo para programar">
+                        <figcaption>Foto de un espacio de programación</figcaption>
+                    </figure>
+
+                    <figure>
+                        <video controls>
+                            <source
+                                src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                                type="video/mp4">
+                            Tu navegador no puede reproducir este video.
+                        </video>
+                        <figcaption>Video de ejemplo</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="formulario" class="seccion">
+                <h2>Formulario</h2>
+
+                <form id="miFormulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Escribe tu nombre" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo"
+                           placeholder="ejemplo@correo.com" required>
+
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad"
+                           min="1" max="120" required>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="color">Color favorito:</label>
+                    <input type="color" id="color" name="color"
+                           value="#2864dc">
+
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona un país</option>
+                        <option value="México">México</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="España">España</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="3"
+                              placeholder="Escribe un mensaje"></textarea>
+
+                    <label for="archivo">Adjuntar archivo:</label>
+                    <input type="file" id="archivo" name="archivo">
+
+                    <label class="opcion">
+                        <input type="checkbox" id="acepto" required>
+                        Acepto enviar mis datos de ejemplo.
+                    </label>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+        </main>
+
+        <aside class="barra-lateral">
+            <h2>Barra lateral</h2>
+            <p>Contenido relacionado.</p>
+
+            <details>
+                <summary>Desplegable</summary>
+                <p>
+                    HTML crea la estructura, CSS da estilo
+                    y JavaScript permite la interactividad.
+                </p>
+            </details>
+
+            <p><a href="#inicio">Volver al inicio ↑</a></p>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Tu Nombre. Hecho con HTML, CSS y JavaScript.</p>
+        <p>CETAC 22</p>
+    </footer>
+
+</body>
+</html>

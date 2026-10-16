@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="contacto.js" defer></script>
+</head>
+<body>
+
+    <div class="navegador">
+        <div class="puntos">
+            <span class="punto rojo"></span>
+            <span class="punto amarillo"></span>
+            <span class="punto verde"></span>
+        </div>
+        <div class="direccion">Contacto - Mi página web</div>
+    </div>
+
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#texto">Texto</a>
+            <a href="index.html#multimedia">Multimedia</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <main>
+            <section class="seccion">
+                <h2>Comunícate conmigo</h2>
+                <p>Completa el formulario para dejar un mensaje.</p>
+
+                <form id="formContacto">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" required>
+
+                    <label for="correo">Correo:</label>
+                    <input id="correo" name="correo" type="email" required>
+
+                    <label for="asunto">Asunto:</label>
+                    <input id="asunto" name="asunto" type="text" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+
+                <p><a href="index.html">← Volver a la página principal</a></p>
+            </section>
+        </main>
+
+        <aside class="barra-lateral">
+            <h2>Información</h2>
+            <p>Gracias por visitar mi página web.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2026 Mi página web</p>
+        <p>CETAC 22</p>
+    </footer>
+
+</body>
+</html>
